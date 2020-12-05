@@ -1,0 +1,214 @@
+h3 {
+  margin: 2em;
+  text-align: center;
+}
+
+/* global styles for both forms */
+form {
+  margin: 1.5em auto;
+  padding: 2em;
+  color: white;
+  border-radius: 30px;
+}
+
+label,
+input {
+  display: block;
+  padding: 1em;
+  margin: 0.5em auto;
+  width: 75%;
+}
+
+input[type="BUTTON"] {
+  width: 40%;
+  margin: 1.5em auto;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="BUTTON"]:hover {
+  background: rgb(196, 195, 195);
+}
+
+/* number of courses form */
+#numCourses {
+  background: black;
+}
+
+/* Gpa calculation form */
+form:last-of-type {
+  background: #f14924;
+}
+
+.GPAcourseData {
+  border-bottom: 2px solid white;
+  margin: 1em;
+  padding: 1em;
+}
+
+.GPAcourseData h4 {
+  margin: 0.3em;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.GPAcourseData:last-of-type {
+  border: none;
+}
+
+.GPAcourseData input:focus {
+  outline: none !important;
+  border: 2px solid black;
+}
+
+/* display GPA */
+#displayGPA {
+  margin: 2em auto;
+  padding: 2em;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 60%;
+  text-align: center;
+}
+
+#displayGPA h4 {
+  font-size: 1.3em;
+  margin: 1em;
+}
+
+#GPA {
+  color: #f14924;
+  font-size: 2em;
+}
+.gpa_area{
+  display: flex;
+  padding: 0px 20px;
+}
+.gpa_calculate {
+  flex: 2;
+}
+.gpa_top h3, .gpa_top ul{
+  text-align: center;
+  list-style: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.gpa_top ul{
+  margin-bottom: 20px;
+}
+.gpa_top ul li{
+  display: inline-block;
+  padding: 5px 12px;
+}
+.gpa_calculate form{
+  display: inline-block;
+  transform: translate(-50%, 0%);
+  left: 50%;
+  position: relative;
+}
+.gpa_calculate_img{
+  flex: 1;
+}
+.gpa_calculate p{
+  text-align: center;
+  color:rgb(255, 254, 254);
+  padding-top: 10px;
+}
+
+.gpa_calculate table{
+    background: rgb(255, 254, 254);
+    color: #000000;
+    border-color: #ffffff;
+    padding: 16px;
+}
+
+.gpa_calculate table td {
+    padding: 10px;
+}
+
+.gpa_calculate input[type="TEXT"] {
+    padding: 5px;
+}
+
+.tm-gpa-header{
+    display: inline-block;
+    background-color: rgb(255, 253, 253);
+    color: rgb(0, 0, 0);
+    padding: 30px 90px 30px 30px;
+}
+
+@media (max-width: 768px) {
+    .tm-contact-r { margin-top: 50px; }
+    
+    .mapouter,
+    .tm-contact-l,
+    .tm-contact-r,
+    .tm-contact-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .gpa_area{
+      display: block;
+    }
+    .gpa_calculate_img {
+      flex: 1;
+      margin-top: 20px;
+      text-align: center;
+  }
+  .search_area{
+    padding-right: 0px;
+  }
+  .tm-site-header-left a{
+        font-size: 60px;
+  }
+  .tm-site-header-col{
+    padding: 15px 10px;
+  }
+  .tm-nav-link{
+        padding: 15px 20px;
+  }
+  .form_group label {
+      min-width: 30%;
+      font-size: 16px;
+  }
+  .form_area input[type="text"], .form_area input[type="email"], .form_area input[type="number"]{
+        width: 45%;
+  }
+}
+
+
+@media (max-width: 480px){
+
+  .footer_top {
+      padding: 10px;
+      display: block;
+      background: #666666;
+  }
+    .footer_top .menu {
+      flex: 1;
+      padding: 15px;
+      text-align: left;
+  }
+  .tm-site-header-col, .gpa_area{
+    padding: 0px;
+  }
+
+  .tm-media{
+    display: block;
+  }
+  .tm-program-bg{
+    height: 300px;
+    min-height: 300px;
+  }
+  .tm-contact-form{
+    padding: 0px;
+  }
+  .search_area input[type="text"]{
+    min-width: 100%;
+  }
+  .btn_submit img {
+      width: 30px;
+  }
+}
